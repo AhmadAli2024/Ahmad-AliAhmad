@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Ahmad's personal portfolio">
+    <meta name="author" content='Ahmad AliAhmad'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+      <!-- Google Verification -->
+      <meta name="google-site-verification" content="4Z24WvpQeHPX5e2P76IzG0EK_PYgBvTMkvUUxYXnI9o" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+      
+     <title>Ahmad AliAhmad</title>
+      
+     
+  </head>
+    
+    
+<body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+     <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"></script>
+    
+        
+<!-- Navbar -->
+<!-- Code to 1. enable dropdown hover and 2. make collapsed navbar white -->
+<style>
+    @media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+}	
+</style>
+<div class="fixed-top bg-light" id="navbarDiv" data-toggle="affix">
+    <!-- Main Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light p-md-3">
+      
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"> Ahmad AliAhmad</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto" style="font-family: 'Montserrat';">
+            <li class="nav-item text-center">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#aboutMe">About Me</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="#research">Research</a>
+            </li>
+            <li class="nav-item text-center">
+              <a class="nav-link" href="https://drive.google.com/file/d/1_azoec9q3p-PonM28nr4wCerDCCXD3nD/view?usp=sharing">Resume</a>
+            </li>
+            <!-- Blog -->
+            <li class="nav-item text-center dropdown">
+              <a class="nav-link dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+            External Links
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown" id="socialDropdown">
+                
+                <li><a class="dropdown-item text-center" href="https://github.com/AhmadAli2024" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">Github</a></li>
+                <li><a class="dropdown-item text-center" href="https://www.linkedin.com/in/ahmad-aliahmad-6082a8239/" target="_blank"><img src="static/linkedin.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">LinkedIn</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+</div>
+<script>
+    $(".navbar-toggler").click(function () {
+    $("nav").toggleClass("bg-light");
+    })
+</script>
+<!-- Content -->
+<a id="top"></a>
+<div class="mainSection">
+    <div class="title">
+        <h1 class="display-1">Ahmad AliAhmad</h1>
+    </div>
+    <div class="typedTextContainer display-6">
+        <div>
+            I am <span class="typedText"></span><span class="cursor">&nbsp;</span>
+        </div>
+    </div>
+</div>
+<div class="divider shapedividers_com-1939"></div>
+<!-- About Me -->
+<a id="aboutMe" style="display: block; position: relative; top: -150px; visibility: hidden;"></a>
+<div class="container container-small fade-in">
+    <h1 class="display-3 text-center"
+        style="font-weight: 700;
+               color: #283618;">About Me</h1>
+    <br>
+    <div class="row">
+        <div class="col-md-6 col-sm-12 my-auto">
+            <img src="static/about_me.jpg"
+                 class="img-fluid rounded mx-auto d-block"
+                 style="max-width: 90%"
+                 alt="Me!">
+            <br>
+        </div>
+        <div class="col-md-6 col-sm-12 my-auto">
+            <div class="text-center" style="letter-spacing:0.03em;">
+                <p>I'm Ahmad AliAhmad, a high school senior at King's Academy.</p>
+                <p>
+                    I'm currently applying to universities and studying neural networks using Python and C.
+                </p>
+                <p>
+                    I also have a wide range of personal projects and independent research, which has allowed me to
+                    self-acquire many technical skills and competency in developing production-level
+                    applications that solve real-life problems for hundreds of people to use.
+                </p>
+                <p>I enjoy assembling and disassembling random electronics and items around me.</p>
+                <p>
+                    Feel free to learn more about me, take a look at my projects, research, and more on my website!
+                </p>
+                <a href="aboutme.html" class="btn btn-secondary btn-lg" role="button">More about me</a>
+                <a href="https://drive.google.com/file/d/1_azoec9q3p-PonM28nr4wCerDCCXD3nD/view?usp=sharing" class="btn btn-secondary btn-lg" role="button">Resume</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Personal Projects -->
+<br><br><br><br><br>
+<a id="projects" style="display: block; position: relative; top: -150px; visibility: hidden;"></a>
+<h1 class="display-3 text-center fade-in"
+style="font-weight: 700;
+       color: #283618;">Personal Projects</h1>
+<br>
+<div class="container">
+    <!-- Project on Left! -->
+    <!-- Maintenece Drone -->
+    <div class="row justify-content-start from-left slide-in project">
+        <div class="col-md-5 col-sm-12 my-auto">
+            <img src="static/autoleave.jpg"
+                 class="img-fluid img-thumbnail rounded mx-auto d-block"
+                 style="max-width: 80%"
+                 alt="HAFS Auto Leave">
+                 <br>
+        </div>
+        <div class="col-md-5 col-sm-12 my-auto">
+            <div class="text-center" style="letter-spacing:0.03em;">
+                <h3>Maintence Drone</h3>
+                <p>Built and programmed a drone that is used to maintain King's Academy solar panels. i.e., checking for cracks, and checking for dirt.</p>
+                <p>Used by the school.</p>
+                <p>Used C++ Arduino for software and Arduino for hardware</p>
+            </div>
+        </div>
+    </div>
+    <!-- Project on Right! -->
+    <!-- Self Optomizing Race Car -->
+    <div class="row justify-content-end from-right slide-in project">
+        <div class="col-md-5 col-sm-12 my-auto">
+            <div class="text-center" style="letter-spacing:0.03em;">
+                <h3>Self-Optomizing Race Car</h3>
+                <p>Recycled an RC to connect it via Arduino to a DDQN made in pytorch. The car was trained virtually and undergoes live training as it drives around a track.</p>
+                <p>Software: Python Hardware: Arduino</p>
+                <p>
+                    <a href="https://github.com/AhmadAli2024/Self-Optimizing-Race-Car/tree/main">Github</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-12 order-first order-md-last my-auto">
+            <img src="static/portfolio.png"
+                 class="img-fluid rounded mx-auto d-block"
+                 style="max-width: 90%"
+                 alt="Portfolio website">
+                 <br>
+        </div>
+    </div>
+    <!-- Project on left! -->
+    <!-- Neural Network in C -->
+    <div class="row justify-content-start from-left slide-in project">
+        <div class="col-md-5 col-sm-12 my-auto">
+            <img src="static/Project 3.png"
+                 class="img-fluid rounded mx-auto d-block"
+                 style="max-width: 90%"
+                 alt="Phone Fixit">
+                 <br>
+        </div>
+        <div class="col-md-5 col-sm-12 my-auto">
+            <div class="text-center" style="letter-spacing:0.03em;">
+                <h3>Neural Network Library in C</h3>
+                <p>Created a Neural Network designing library for developers to create all kinds of neural networks from scratch using C.</p>
+                <p>Programming Language: C</p>
+                <p>
+                    <a href="https://github.com/AhmadAli2024/project-M">Github</a>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+    <!-- String Powered Car -->
+    <div class="row justify-content-end from-right slide-in project">
+        
+        <div class="col-md-5 col-sm-12 my-auto">
+            <div class="text-center" style="letter-spacing:0.03em;">
+                <h3>String Powered Car</h3>
+                <p>Designed and built a string-powered car able to reach distances of 12+ meters.</p>
+                <p>Made in 1 week for College Level Engineering Course.</p>
+            </div>
+        </div>
+        <div class="col-md-5 col-sm-12 order-first order-md-last my-auto">
+            <img src="static/Project 4.jpg"
+                 class="img-fluid img-thumbnail rounded mx-auto d-block"
+                 style="max-width: 80%"
+                 alt="RateMySchedule">
+                 <br>
+        </div>
+    </div>
+    <!-- NewsBot -->
+    <div class="row justify-content-start from-left slide-in project">
+        <div class="col-md-5 col-sm-12  my-auto">
+            <img src="static/newsbot.png"
+                 class="img-fluid rounded mx-auto d-block"
+                 style="max-width: 90%"
+                 alt="Newsbot">
+                 <br>
+        </div>
+        <div class="col-md-5 col-sm-12 my-auto">
+            <div class="text-center" style="letter-spacing:0.03em;">
+                <h3>NewsBot</h3>
+                <p>Created Facebook chatbot that sends users daily headlines through FB Messenger, and allows users to browse top
+                    stories from multiple sources. 500+ cumulative users before deletion. Uses NewsAPI.</p>
+                <p>Note: No longer maintained.</p>
+                <p>Tech Stack: Python, Web APIs</p>
+                <p>
+                <a href="shawnlee.io/github/HAFS-Newsbot">Github</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br>
+<a id="research" style="display: block; position: relative; top: -150px; visibility: hidden;"></a>
+<h1 class="display-3 text-center fade-in"
+style="font-weight: 700;
+       color: #283618;">Independent Research</h1>
+<br>
+<div class="container">
+    <!-- Project on Left! -->
+    <!-- HAFS Auto Leave -->
+    <div class="row justify-content-start from-left slide-in project">
+        <div class="col-md-5 col-sm-12 my-auto">
+            <img src="static/research1.png"
+                 class="img-fluid img-thumbnail rounded mx-auto d-block"
+                 style="max-width: 80%"
+                 alt="Research 1">
+                 <br>
+        </div>
+        <div class="col-md-5 col-sm-12 my-auto">
+            <div class="text-center" style="letter-spacing:0.03em;">
+                <h3>A method for general-purpose lie detection using electroencephalogram data and deep learning</h3>
+                <p>First Author | 2019</p>
+                <p>First Place @ Hong Kong Student Science Project Competition</p>
+                <p>Bronze Prize @ Korea Science and Engineering Fair</p>
+                <p>
+                <a href="https://drive.google.com/file/d/1hq-Cba8tf_VgljcL6t8K93VKaFarNuoH/view?usp=sharing">Poster</a>
+                </p>
+                <p>
+                <a href="https://drive.google.com/file/d/1AJEJ6UT6CW2rwayze_JwOorQ4vO4XanD/view?usp=sharing">Paper</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<p class="text-center" style="font-size:5px;">© Shawn Lee, 2022. Created with Bootstrap.</p>
+<!-- Scripts! -->
+<!-- Make navbar solid after scroll -->
+<script type="text/javascript">
+    var nav = document.getElementById('navbarDiv');
+    $("#socialDropdown").css("background", "transparent");
+    $("#socialDropdown").css("border", "none");
+    nav.classList.remove('bg-light', 'shadow');
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            nav.classList.add('bg-light', 'shadow');
+            $("#socialDropdown").css("background", "white");
+            $("#socialDropdown").css("border", "1px solid rgba(0,0,0,.15)");
+            $(".arrow").hide();
+        } else {
+            nav.classList.remove('bg-light', 'shadow');
+            $("#socialDropdown").css("background", "transparent");
+            $("#socialDropdown").css("border", "none");
+            $(".arrow").show();
+        }
+    });
+</script>
+<!-- Typewriter animation -->
+<script type="text/javascript">
+    const typedTextSpan = document.querySelector(".typedText");
+    const cursorSpan = document.querySelector(".cursor");
+    
+    const textArr = ["a student developer", "a photo/videographer", "a teaching assistant", "a bedroom guitarist", "a classically trained cellist", "a Korean Army vet", "Shawn Lee"];
+    const typeSpeed = 50;
+    const eraseSpeed = 80;
+    const eraseDelay = 2000;
+    const typeDelay = 1000;
+    const initialDelay = 1000;
+    
+    let textArrIndex = 0;
+    let charIndex = 0;
+    
+    function type() {
+        if (charIndex < textArr[textArrIndex].length) { //If not done typing
+            if (!cursorSpan.classList.contains("noblink")) cursorSpan.classList.add("noblink"); // Prevent blink while typing or erasing
+            typedTextSpan.textContent += textArr[textArrIndex].charAt(charIndex);
+            charIndex++;
+            setTimeout(type, typeSpeed);
+        } else { // If done typing
+            cursorSpan.classList.remove("noblink"); // Start cursor blink
+            setTimeout(erase, eraseDelay);
+        }
+    }
+    
+    function erase() {
+        if (charIndex > 0) { // If not done erasing
+            if (!cursorSpan.classList.contains("noblink")) cursorSpan.classList.add("noblink"); // Prevent blink while typing or erasing
+            typedTextSpan.textContent = textArr[textArrIndex].substring(0, charIndex - 1); // Reduce typed text length by 1
+            charIndex--;
+            setTimeout(erase, eraseSpeed);
+        } else { // If done erasing
+            cursorSpan.classList.remove("noblink"); // Start cursor blink
+            textArrIndex++;
+            if (textArrIndex >= textArr.length) { //Loop back to first text in array
+                textArrIndex = 0;
+            }
+            setTimeout(type, typeDelay);
+        }
+    }
+    
+    window.addEventListener("DOMContentLoaded", () => {
+        setTimeout(type, initialDelay);
+    });
+</script>
+<!-- Fade in / out animation -->
+<script>
+    const faders = document.querySelectorAll(".fade-in");
+    const sliders = document.querySelectorAll(".slide-in");
+    const appearOptions = {
+        threshold: 0.2,
+    };
+    const appearOnScroll = new IntersectionObserver(function(
+        entries, 
+        appearOnScroll)
+        {
+            entries.forEach(entry => {
+                if(!entry.isIntersecting){
+                    return;
+                } else {
+                    entry.target.classList.add("appear");
+                    appearOnScroll.unobserve(entry.target);
+                }
+            })
+        },
+        appearOptions);
+    
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+    sliders.forEach(slider => {
+        appearOnScroll.observe(slider);
+    });
+</script>
+</body>
+</html>
