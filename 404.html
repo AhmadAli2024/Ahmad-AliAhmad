@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+  <!-- My CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+  <title>Shawn Lee</title>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function() {
+      // Parse the URL path
+      var path = window.location.pathname.split('/').filter(Boolean);
+    
+      // Define redirections
+      var redirects = {
+        github: 'https://github.com/shawnsihyunlee/',
+        youtube: 'https://www.youtube.com/@ShawnLeee',
+        instagram: 'https://www.instagram.com/shawn.leee/',
+        linkedin: 'https://www.linkedin.com/in/sihyunlee/',
+        blog: 'https://shawnleemilitary.wordpress.com/',
+        resume: 'https://drive.google.com/file/d/1QwlPVpuzdY-2P3ok2zZQr-eDZ2q3UG5j/view?usp=sharing'
+      };
+
+      // Identify the service
+      var service = path[0];
+
+      // Build the redirect URL
+      // Note that if service does not exist in redirects, `redirectURL` will be undefined
+      var redirectURL = redirects[service];
+
+      // Handle specific paths for services (like repositories for GitHub)
+      if (service === 'github' && path[1]) {
+        redirectURL += path[1];
+      }
+
+
+      
+      // Redirect to the URL
+      if (redirectURL) {
+        window.location.href = redirectURL;
+      } else {
+        // Handle invalid service or path
+        window.location.href = 'https://shawnlee.io'; // Redirect to home or error page
+      }
+    });
+  </script>
+</head>
+<body>
+  <div style="display:flex; min-height:100vh; width:100%; align-items:center; justify-content:center;">
+    <h1 class="display-6">Redirecting you in the right direction :)</h1>
+  </div>
+</body>
+</html>
